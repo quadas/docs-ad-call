@@ -31,7 +31,6 @@ pcode | string | no | The postal code of the user requesting an ad. If not speci
 psa | string | no | If true, PSAs will serve if the auction has no winner. Otherwise, an empty 200 OK HTTP response will be returned. Allowed values: true or false, 1 or 0.
 st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to"mobile_app".
 size | string | no | The requested banner size, e.g., "320x50", or the screen size for Interstitial ads.
-tmpl_id | string | no | The supply template identifier.
 ua | string | no | The user agent string associated with the device requesting an ad. If specified, this value will be used rather than the standard user agent sent via HTTP header. This should be URL encoded.
 cat | string | no | universal category, e.g., "IAB13,IAB21-1"
 vnd_cat | string | no | custom categories (vendor), e.g.: "3,24,55"
