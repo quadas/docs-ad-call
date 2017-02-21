@@ -1,3 +1,6 @@
+endpoint: `/mob`
+
+
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
 id | string | yes | The unique ID of the placement where the ad will serve
@@ -34,4 +37,3 @@ vnd_cat | string | no | custom categories (vendor), e.g.: "3,24,55"
 vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 
 
-endpoint: `/mob`
