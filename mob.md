@@ -1,5 +1,6 @@
 endpoint: `/mob`
 
+## Reqeust
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
@@ -36,4 +37,6 @@ cat | string | no | universal category, e.g., "IAB13,IAB21-1"
 vnd_cat | string | no | custom categories (vendor), e.g.: "3,24,55"
 vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 
+## Response
 
+TODO
