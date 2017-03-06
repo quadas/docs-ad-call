@@ -38,4 +38,19 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 
 ## Response
 
-TODO
+### Banner/Interstitial
+
+```javascript
+{
+  "status": "ok",
+  "ads": [
+    {
+      "type": "banner",
+      "width": 320,
+      "height": 50,
+      "content": "<script type=\"text/javascript\">document.write('<a href=\"http://example.com/cute/kittens" target=\"_blank\"><img width=\"320\" height=\"50\" style=\"border-style: none\" src=\"http://placekitten.com/g/320/50\"/></a>');</script>"
+    }
+  ]
+}
+```
+
