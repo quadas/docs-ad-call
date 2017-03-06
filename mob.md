@@ -54,3 +54,39 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 }
 ```
 
+### Native
+
+```javascript
+{
+  "status": "ok",
+  "version": 1,
+  "native": [
+    {
+      "type": "in-feed-standard",
+      "title": "Cute kittens",
+      "description": "Have some cute kittens",
+      "full_text": "Really long text",
+      "icon_img_url": "https://dummyimage.com/100x100?text=ICON",
+      "main_media": [
+        {
+          "label": "default",
+          "width": 800,
+          "height": 500,
+          "url": "https://dummyimage.com/800x500?text=MAIN_IMAGE"
+        }
+      ],
+      "cta": "download",
+      "click_trackers": [
+        "http://dummyimage.com/1x1?text=CLICK-TRACKER",
+        "http://dummyimage.com/1x1?text=CLICK-TRACKER2"
+      ],
+      "impression_trackers": [
+        "https://dummyimage.com/1x1?text=IMP-TRACKER",
+        "https://dummyimage.com/1x1?text=IMP-TRACKER2"
+      ],
+      "click_url": "http://example.com/cute/kittens"
+    }
+  ]
+}
+```
+
