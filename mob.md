@@ -90,3 +90,51 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 }
 ```
 
+#### Native Object
+
+
+Field | Type | Description
+----- | ---- | -----------
+title | text | The title displayed with the native ad.
+description | text | A short description of the ad's offer to the user.
+full_text | text | The full text of the native ad. Much longer than descrip tion.
+context | string | The social context where the native ad will appear in the application. This varies depending on the media subtype of the native ad. For example, it may be a string such as "newsfeed".
+icon_img_url | string | The URL of the icon image for the native ad. We don't validate this; you must ensure that the URL resolves to the proper icon image for your native ad type. Will contain a secure URL (HTTPS/SSL) if the auction is secure.
+main_media | array | The main content that will appear in the body of the of native ad. For now, we only support images. For more objects information, see Main Media below.
+sponsored | string | The brand name that the user should associate with this creative.
+cta | string | The "call to action" text of the ad, e.g., "Download now".
+rating | object | If the advertisement is for an app, this will display the app's rating in the relevant app store. Note that the rating is provided by the advertiser. We do not directly pull ratings from app stores.
+click_url | string | The destination URL that will open if the user clicks the ad. Note that this URL could launch an app on a device.
+click_fallback_url | string | A fallback web URL to be used if the deep link provided in the click_url is not supported on the device. For mobile inventory only.
+custom_key_values | array | Some sellers allow the buyer to pass a list of custom of key/value pairs. For more information, see Custom Key objects Values below.
+click_trackers | array | A list of third-party click tracking URLs intended to be of used with native creatives. For more information, see Cli objects ck Trackers below.
+impression_trackers | array | A list of third-party impression tracking URLs intended to of be used with native creatives. For more information, see objects Impression Trackers below.
+
+##### Main Media
+
+Field | Type | Description
+----- | ---- | -----------
+width | int | The width of the main native ad media.
+height | int | The height of the main native ad media.
+media_url | string | The URL from which the media can be downloaded.
+media_url_secure | string | Like media_url, but with SSL.
+
+##### Custom Key Values
+
+Field | Type | Description
+----- | ---- | -----------
+custom_key | string | A seller-defined key string.
+custom_value | string | A seller-defined value string.
+
+##### Click Trackers
+
+Field | Type | Description
+----- | ---- | -----------
+click_tracker_url | string | A third-party click tracking URL.
+
+##### Impression Trackers
+
+Field | Type | Description
+----- | ---- | -----------
+impression_tracker_url | string | A third-party impression tracking URL.
+impression_tracker_url_secure | string | A third-party impression tracking URL (that uses SSL).
