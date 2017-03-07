@@ -9,7 +9,7 @@ For definitions of all the supported parameters, see [Request](#request-paramete
 
 The ad call accepts the query string parameters shown below.
 Note that device ID fields are case sensitive.
-Several of these parameters need to be URL encoded. For more information about URL encoding, see this [Wikipedia article(https://en.wikipedia.org/wiki/Percent-encoding).
+Several of these parameters need to be URL encoded. For more information about URL encoding, see this [Wikipedia article](https://en.wikipedia.org/wiki/Percent-encoding).
 
 Parameter | Type | Required | Description
 --------- | ---- | -------- | -----------
