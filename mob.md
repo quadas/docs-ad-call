@@ -1,11 +1,11 @@
 # Ad Call Reference
 
 This document describes our ad calls, the `/mob` calls, which are used to request ads for all apps. These calls include information about the client device as query string parameters.
-For definitions of all the supported parameters, see [Request](#request-parameters).
+For definitions of all the supported parameters, see [Request parameters](#request-parameters).
 
 
 
-## Reqeust parameters
+## Request parameters
 
 The ad call accepts the query string parameters shown below.
 Note that device ID fields are case sensitive.
