@@ -27,9 +27,7 @@ mcc | int | no | The Mobile Country Code as specified by the ITU.
 mnc | int | no | The Mobile Network Code as specified by the ITU.
 orientation | string | no | Device screen orientation during the ad request. Allowed values are "v" or "h".
 os | string | no | The operating system of the device. For example, Android 4.0.2. For mobile apps, this is usually provided by the user agent.
-pcode | string | no | The postal code of the user requesting an ad. If not specified, postal code will be determined from the IP address.
-psa | string | no | If true, PSAs will serve if the auction has no winner. Otherwise, an empty 200 OK HTTP response will be returned. Allowed values: true or false, 1 or 0.
-st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to"mobile_app".
+st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to "mobile_app".
 size | string | no | The requested banner size, e.g., "320x50", or the screen size for Interstitial ads.
 ua | string | no | The user agent string associated with the device requesting an ad. If specified, this value will be used rather than the standard user agent sent via HTTP header. This should be URL encoded.
 cat | string | no | universal category, e.g., "IAB13,IAB21-1"
