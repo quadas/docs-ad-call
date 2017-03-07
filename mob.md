@@ -42,10 +42,10 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 
 ```javascript
 {
-  "status": "ok",
+  "status": "ok", // `no_bid`, `error`
   "ads": [
     {
-      "type": "banner", // or `interstitial`
+      "type": "banner", // `interstitial`, `vast30`
       "width": 320,
       "height": 50,
       "content": "<script type=\"text/javascript\">document.write('<a href=\"http://example.com/cute/kittens" target=\"_blank\"><img width=\"320\" height=\"50\" style=\"border-style: none\" src=\"http://placekitten.com/g/320/50\"/></a>');</script>"
@@ -54,7 +54,7 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 }
 ```
 
-### Vast 3.0
+VAST example
 
 ```javascript
 {
