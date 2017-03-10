@@ -45,9 +45,7 @@ vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
 
 ## Response
 
-### Non-native
-
-(banner/interstitial)
+banner/interstitial example
 
 ```javascript
 {
