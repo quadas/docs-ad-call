@@ -79,6 +79,20 @@ VAST example
 }
 ```
 
+Field | Type | Description
+----- | ---- | -----------
+status | string | one of `ok`, `no_bid` or `error`; `ok` indicates there're ads in the response, `no_bid` indicates no one has bid on this opertunity
+ads | array | array of ad object
+errorMessage | string | error message of `status` is `error`
+native | array | list of native objects, see [native](#native)
+
+Field | Type | Description
+----- | ---- | -----------
+type | string | one of `banner`, `interstitial` or `vast30`
+width | int | widht of the creative
+height | int | height of the creative
+content | string | html snippet for `banner` and `interstitial`, vast 3.0 xml for `vast30`
+
 ### Native
 
 ```javascript
