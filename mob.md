@@ -79,12 +79,16 @@ VAST example
 }
 ```
 
+### response object
+
 Field | Type | Description
 ----- | ---- | -----------
 status | string | one of `ok`, `no_bid` or `error`; `ok` indicates there're ads in the response, `no_bid` indicates no one has bid on this opertunity
 ads | array | array of ad object
 errorMessage | string | error message of `status` is `error`
 native | array | list of native objects, see [native](#native)
+
+### ad object
 
 Field | Type | Description
 ----- | ---- | -----------
