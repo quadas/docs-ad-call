@@ -42,6 +42,7 @@ ua | string | no | The user agent string associated with the device requesting a
 cat | string | no | universal category, e.g., "IAB13,IAB21-1"
 vnd_cat | string | no | custom categories (vendor), e.g.: "3,24,55"
 vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
+format | string | no | response format, supported values: `json` (default), `xml` (only for vast 3.0 video placement)
 
 ## Response
 
