@@ -23,10 +23,11 @@ LimitAdTrackingEnabled | boolean | no | If true, the user has set the system-lev
 devtime | int | no | The time on the device, measured in seconds since the epoch, or UNIX Time.
 devtz | string | no | The device's timezone.
 md5udid | string | no | The MD5 hash of the ANDROID_ID. This should only be sent for Android devices. This should be URL encoded.
-sha1udid | string | no | The SHA1 hash of the ANDROID_ID. This should only be sent for Android devices. This should be URL encoded..
+sha1udid | string | no | The SHA1 hash of the ANDROID_ID. This should only be sent for Android devices. This should be URL encoded.
 idfa | string | no | The Apple advertising identifier for iOS devices running iOS 6+.
 aaid | string | no | The Google advertising identifier for Android devices as retrieved from Google Play services.
 ip | string | no | IP address of the device making the ad request, e.g., 207.237.150.246.<br>If not specified, the IP passed via HTTP headers will be used for geo detection instead.
+url | string | no | The URL of the web page which the ad will be placed. This should only be sent for a web browser. This should be URL encoded.<br>If not specified, the url passed via HTTP headers will be used.
 language | string | no | The device's language, specified with an ISO Language Code.
 loc | string | no | The user's location expressed in latitude and longitude, in the format: snnn.ddddddddddddd,snnn.ddddddddddddd. Up to 13 decimal places of precision are allowed.
 loc_age | int | no | Age of the location data in milliseconds.
