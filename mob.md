@@ -181,3 +181,8 @@ Field | Type | Description
 ----- | ---- | -----------
 impression_tracker_url | string | A third-party impression tracking URL.
 impression_tracker_url_secure | string | A third-party impression tracking URL (that uses SSL).
+
+
+## Cross Site Access Control
+
+For requests that requires [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) support, all endpoint documented here supports both simple requests and CORS preflight request.
