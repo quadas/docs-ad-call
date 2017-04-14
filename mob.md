@@ -27,7 +27,7 @@ sha1udid | string | no | The SHA1 hash of the ANDROID_ID. This should only be se
 idfa | string | no | The Apple advertising identifier for iOS devices running iOS 6+.
 aaid | string | no | The Google advertising identifier for Android devices as retrieved from Google Play services.
 ip | string | no | IP address of the device making the ad request, e.g., 207.237.150.246.<br>If not specified, the IP passed via HTTP headers will be used for geo detection instead.
-url | string | recommend | The URL of the web page which the ad will be placed. This should only be sent for a web browser. This should be URL encoded.<br>If not specified, the url passed via HTTP headers will be used.
+url | string | recommended | The URL of the web page which the ad will be placed. This should only be sent for a web browser. This should be URL encoded.<br>If not specified, the url passed via HTTP headers will be used.
 language | string | no | The device's language, specified with an ISO Language Code.
 loc | string | no | The user's location expressed in latitude and longitude, in the format: snnn.ddddddddddddd,snnn.ddddddddddddd. Up to 13 decimal places of precision are allowed.
 loc_age | int | no | Age of the location data in milliseconds.
@@ -39,7 +39,7 @@ orientation | string | no | Device screen orientation during the ad request. All
 os | string | no | The operating system of the device. For example, Android 4.0.2. For mobile apps, this is usually provided by the user agent.
 st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to "mobile_app".
 size | string | no | The requested banner size, e.g., "320x50", or the screen size for Interstitial ads.
-ua | string | recommend | The user agent string associated with the device requesting an ad. If specified, this value will be used rather than the standard user agent sent via HTTP header. This should be URL encoded.
+ua | string | recommended | The user agent string associated with the device requesting an ad. If specified, this value will be used rather than the standard user agent sent via HTTP header. This should be URL encoded.
 cat | string | no | universal category, e.g., "IAB13,IAB21-1"
 vnd_cat | string | no | custom categories (vendor), e.g.: "3,24,55"
 vnd_tag | string | no | custom tags (vendor), e.g.: "2,5,10"
