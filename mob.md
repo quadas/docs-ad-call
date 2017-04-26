@@ -37,7 +37,7 @@ max_size | string | no | The maximum banner size allowed, e.g., "320x250". N/A f
 mcc | int | no | The Mobile Country Code as specified by the ITU.
 mnc | int | no | The Mobile Network Code as specified by the ITU.
 orientation | string | no | Device screen orientation during the ad request. Allowed values are "v" or "h".
-os | string | no | The operating system of the device. For example, "Android". For mobile apps, this is usually provided by the user agent.
+os | string | no | The operating system of the device. For example, "Android" or "iOS". For mobile apps, this is usually provided by the user agent.
 osv | string | no | The operating system version of the device. For example, "4.0.2". For mobile apps, this is usually provided by the user agent.
 st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to "mobile_app".
 size | string | no | The requested banner size, e.g., "320x50", or the screen size for Interstitial ads.
