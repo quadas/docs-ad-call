@@ -24,6 +24,7 @@ devtime | int | no | The time on the device, measured in seconds since the epoch
 devtz | string | no | The device's timezone.
 md5udid | string | no | The MD5 hash of the ANDROID_ID. This should only be sent for Android devices. This should be URL encoded.
 sha1udid | string | no | The SHA1 hash of the ANDROID_ID. This should only be sent for Android devices. This should be URL encoded.
+udid | string | no | The raw ANDROID_ID. This should only be sent for Android devices. This should be URL encoded.
 idfa | string | no | The Apple advertising identifier for iOS devices running iOS 6+.
 aaid | string | no | The Google advertising identifier for Android devices as retrieved from Google Play services.
 ip | string | no | IP address of the device making the ad request, e.g., 207.237.150.246.<br>If not specified, the IP passed via HTTP headers will be used for geo detection instead.
@@ -36,7 +37,8 @@ max_size | string | no | The maximum banner size allowed, e.g., "320x250". N/A f
 mcc | int | no | The Mobile Country Code as specified by the ITU.
 mnc | int | no | The Mobile Network Code as specified by the ITU.
 orientation | string | no | Device screen orientation during the ad request. Allowed values are "v" or "h".
-os | string | no | The operating system of the device. For example, Android 4.0.2. For mobile apps, this is usually provided by the user agent.
+os | string | no | The operating system of the device. For example, "Android". For mobile apps, this is usually provided by the user agent.
+osv | string | no | The operating system version of the device. For example, "4.0.2". For mobile apps, this is usually provided by the user agent.
 st | string | no | The supply type of the inventory, which indicates the environment in which an ad will be shown. Allowed values: "mobile_app", "mobile_web", or "web". Defaults to "mobile_app".
 size | string | no | The requested banner size, e.g., "320x50", or the screen size for Interstitial ads.
 ua | string | recommended | The user agent string associated with the device requesting an ad. If specified, this value will be used rather than the standard user agent sent via HTTP header. This should be URL encoded.
