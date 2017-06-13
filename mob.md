@@ -187,4 +187,4 @@ impression_tracker_url_secure | string | A third-party impression tracking URL (
 
 ## Cross Site Access Control
 
-For requests that requires [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) support, all endpoint documented here supports both simple requests and CORS preflight request.
+For requests that requires [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) support, all endpoint documented here supports both simple requests and CORS preflight request. However jsonp is highly recommended, which bypasses cross-domain restrictions without any hassel and supports (very) old browsers.
